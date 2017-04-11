@@ -1,0 +1,42 @@
+TACC: Starting up job 8412101
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Rank 8/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 9/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 3/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 5/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 1/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 2/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 4/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 6/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 7/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 0/30 running on c482-303.stampede.tacc.utexas.edu.
+Rank 18/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 19/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 17/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 14/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 13/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 11/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 16/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 15/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 10/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 12/30 running on c483-804.stampede.tacc.utexas.edu.
+Rank 28/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 29/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 27/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 21/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 22/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 23/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 24/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 20/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 26/30 running on c485-802.stampede.tacc.utexas.edu.
+Rank 25/30 running on c485-802.stampede.tacc.utexas.edu.
+Iter 0: Residual: 545.223
+Iter 1000: Residual: 337.02
+Iter 2000: Residual: 229.052
+Iter 3000: Residual: 155.645
+Iter 4000: Residual: 105.661
+Time elapsed is 2.081266 seconds.
+
+TACC: Shutdown complete. Exiting.
+

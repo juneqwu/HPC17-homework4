@@ -1,0 +1,90 @@
+Runs on STAMPEDE
+
+################################
+
+Jacobi Blocking
+
+################################
+
+Weak Scalability: 
+
+Fixed local size per process: lN = 100
+
+Fixed number of iterations: 5000
+
+N = 1000 with q = 10 : 0.512527
+
+N = 1500 with q = 15 : 0.543097
+
+N = 2000 with q = 20 : 1.044162
+
+N = 2500 with q = 25 : 1.067856
+
+N = 3000 with q = 30 : 1.089111
+
+N = 3500 with q = 35 : 1.155926
+
+N = 4000 with q = 40 : 1.967685
+
+
+Strong Scalability:
+
+fixed matrix size: 30000
+
+q = 10:
+
+q = 20:
+
+q = 30:
+
+q = 40:
+
+q = 50:
+
+q = 60:
+
+
+
+
+################################
+
+Jacobi Non-blocking
+
+################################
+
+Weak Scalability: 
+
+Fixed local size per process: lN = 100
+
+Fixed number of iterations: 5000
+
+N = 1000 with q = 10 : 1.583551
+
+N = 1500 with q = 15 : 2.153284
+
+N = 2000 with q = 20 : 2.038419
+
+N = 2500 with q = 25 : 2.226798
+
+N = 3000 with q = 30 : 2.081266
+
+N = 3500 with q = 35 : 2.094943
+
+N = 4000 with q = 40 : 2.070127
+
+
+Strong Scalability:
+
+fixed matrix size: 30000
+
+q = 10:
+
+q = 20:
+
+q = 30:
+
+q = 40:
+
+q = 50:
+
+q = 60:

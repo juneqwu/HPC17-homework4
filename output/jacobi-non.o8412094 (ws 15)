@@ -1,0 +1,27 @@
+TACC: Starting up job 8412094
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Rank 5/15 running on c483-804.stampede.tacc.utexas.edu.
+Rank 7/15 running on c483-804.stampede.tacc.utexas.edu.
+Rank 0/15 running on c483-804.stampede.tacc.utexas.edu.
+Rank 1/15 running on c483-804.stampede.tacc.utexas.edu.
+Rank 2/15 running on c483-804.stampede.tacc.utexas.edu.
+Rank 6/15 running on c483-804.stampede.tacc.utexas.edu.
+Rank 4/15 running on c483-804.stampede.tacc.utexas.edu.
+Rank 3/15 running on c483-804.stampede.tacc.utexas.edu.
+Rank 14/15 running on c485-802.stampede.tacc.utexas.edu.
+Rank 13/15 running on c485-802.stampede.tacc.utexas.edu.
+Rank 11/15 running on c485-802.stampede.tacc.utexas.edu.
+Rank 10/15 running on c485-802.stampede.tacc.utexas.edu.
+Rank 8/15 running on c485-802.stampede.tacc.utexas.edu.
+Rank 12/15 running on c485-802.stampede.tacc.utexas.edu.
+Rank 9/15 running on c485-802.stampede.tacc.utexas.edu.
+Iter 0: Residual: 385.477
+Iter 1000: Residual: 220.006
+Iter 2000: Residual: 142.981
+Iter 3000: Residual: 93.159
+Iter 4000: Residual: 60.6941
+Time elapsed is 2.153284 seconds.
+
+TACC: Shutdown complete. Exiting.
+

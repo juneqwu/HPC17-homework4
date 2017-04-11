@@ -1,0 +1,32 @@
+TACC: Starting up job 8411298
+TACC: Setting up parallel environment for MVAPICH2+mpispawn.
+TACC: Starting parallel tasks...
+Rank 9/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 8/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 3/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 6/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 4/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 7/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 5/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 2/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 0/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 1/20 running on c508-302.stampede.tacc.utexas.edu.
+Rank 18/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 13/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 16/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 10/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 15/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 19/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 14/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 11/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 17/20 running on c508-303.stampede.tacc.utexas.edu.
+Rank 12/20 running on c508-303.stampede.tacc.utexas.edu.
+Iter 0: Residual: 445.155
+Iter 1000: Residual: 262.15
+Iter 2000: Residual: 173.134
+Iter 3000: Residual: 114.57
+Iter 4000: Residual: 75.7959
+Time elapsed is 1.044162 seconds.
+
+TACC: Shutdown complete. Exiting.
+
