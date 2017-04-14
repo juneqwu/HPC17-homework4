@@ -50,4 +50,6 @@ if (rank < 2) {
   }
 
 MPI_Finalize();
+
+return 0;
 }

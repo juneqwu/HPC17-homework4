@@ -114,7 +114,7 @@ if (taskid > MASTER) {
  
 
 MPI_Finalize();
-
+return 0;
 }   /* end of main */
 
 
