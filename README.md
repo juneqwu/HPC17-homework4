@@ -8,7 +8,7 @@ Problem 2: See plots for scalability study. When running jacobi-mpi2D, you need 
 
 Problem 3: Parallel sample sort. Used MPI collective communications, e.g. MPI_Alltoall, MPI_Alltoallv, MPI_Bcast. 
 
-\* *Problem 2 and Problem 3 report timing run on [STAMPEDE](https://www.tacc.utexas.edu/stampede/)*.
+\* *Problem 2 and Problem 3 report timing ran on [STAMPEDE](https://www.tacc.utexas.edu/stampede/)*.
 
 
 
