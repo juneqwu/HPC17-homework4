@@ -29,7 +29,7 @@ double compute_residual(double *lu, int lN, double invhsq)
 
 int main(int argc, char * argv[])
 {
-  int mpirank, i, j, p, N, lN, iter, max_iters;
+  int mpirank, i, j, p, N, lN, iter, max_iters, lp;
   MPI_Status status, status1;
 
   MPI_Init(&argc, &argv);
@@ -46,10 +46,11 @@ int main(int argc, char * argv[])
   sscanf(argv[2], "%d", &max_iters);
 
   /* compute number of unknowns handled by each process */
-  lN = N / p;
-  if ((N % p != 0 ) && mpirank == 0 ) {
+  lN = (int) N / sqrt(p);
+  lp = (int) sqrt(p);
+  if ((N % (int) sqrt(p) != 0 ) && mpirank == 0 ) {
     printf("N: %d, local N: %d\n", N, lN);
-    printf("Exiting. N must be a multiple of p\n");
+    printf("Exiting. N must be a multiple of the square root of p\n");
     MPI_Abort(MPI_COMM_WORLD, 0);
   }
   /* timing */
@@ -81,32 +82,32 @@ int main(int argc, char * argv[])
     }
 
     /* communicate ghost values */
-    if (mpirank % lN < p - 1) {
+    if (mpirank % lp < (lp - 1) ) {
       /* If not the right-most process, send/recv bdry values to the right */
-      for (i = 1; i<= lN; i++){
+      for (i = 1; i<=lN; i++){
 	MPI_Send(&(lunew[(lN+2)*(i+1)-2]), 1, MPI_DOUBLE, mpirank+1, 124, MPI_COMM_WORLD);
 	MPI_Recv(&(lunew[(lN+2)*i]), 1, MPI_DOUBLE, mpirank+1, 123, MPI_COMM_WORLD, &status);
       }
     }
-    if (mpirank % lN > 0) {
+    if (mpirank % lp > 0 ) {
       /* If not the left-most process, send/recv bdry values to the left */
       for (i = 1; i <= lN; i++){
         MPI_Send(&(lunew[(lN+2)*i+1]), 1, MPI_DOUBLE, mpirank-1, 123, MPI_COMM_WORLD);
         MPI_Recv(&(lunew[(lN+2)*(i+1)-1]), 1, MPI_DOUBLE, mpirank-1, 124, MPI_COMM_WORLD, &status1);
       }
     }
-    if (mpirank - lN*(lN-1) >= lN-1) {
+    if (lp*(lp-1) - mpirank > 0) {
       /* If not the top-most process, send/recv bdry values to the top */
       for (i = 1; i <= lN; i++){
-        MPI_Send(&(lunew[i]), 1, MPI_DOUBLE, mpirank+lN, 123, MPI_COMM_WORLD);
-        MPI_Recv(&(lunew[(lN+2)*lN+i]), 1, MPI_DOUBLE, mpirank-lN, 124, MPI_COMM_WORLD, &status1);
+        MPI_Send(&(lunew[i]), 1, MPI_DOUBLE, mpirank+lp, 125, MPI_COMM_WORLD);
+        MPI_Recv(&(lunew[(lN+2)*lN+i]), 1, MPI_DOUBLE, mpirank + lp, 126, MPI_COMM_WORLD, &status1);
       }
     }
-     if (mpirank >= lN) {
+     if (mpirank >= lp ) {
       /* If not the bottom-most process, send/recv bdry values to the bottom */
       for (i = 1; i <= lN; i++){
-        MPI_Send(&(lunew[(lN+2)*(lN-1)+i]), 1, MPI_DOUBLE, mpirank - lN, 123, MPI_COMM_WORLD);
-        MPI_Recv(&(lunew[i]), 1, MPI_DOUBLE, mpirank + lN, 124, MPI_COMM_WORLD, &status1);
+        MPI_Send(&(lunew[(lN+2)*(lN-1)+i]), 1, MPI_DOUBLE, mpirank - lp, 126, MPI_COMM_WORLD);
+        MPI_Recv(&(lunew[i]), 1, MPI_DOUBLE, mpirank - lp, 125, MPI_COMM_WORLD, &status1);
       }
     }
 

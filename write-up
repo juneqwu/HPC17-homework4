@@ -1,5 +1,3 @@
-Runs on STAMPEDE
-
 ################################
 
 Jacobi Blocking
@@ -12,79 +10,50 @@ Fixed local size per process: lN = 100
 
 Fixed number of iterations: 5000
 
-N = 1000 with q = 10 : 0.512527
+N = 100 with q = 1 : 0.067740
 
-N = 1500 with q = 15 : 0.543097
+N = 200 with q = 4 : 0.067707
 
-N = 2000 with q = 20 : 1.044162
+N = 400 with q = 16 : 0.393976
 
-N = 2500 with q = 25 : 1.067856
+N = 800 with q = 64 : 2.147537
 
-N = 3000 with q = 30 : 1.089111
+N = 1600 with q = 256 : 3.526606
 
-N = 3500 with q = 35 : 1.155926
-
-N = 4000 with q = 40 : 1.967685
+N = 3200 with q = 1024 : 5.686962
 
 
 Strong Scalability:
 
-fixed matrix size: 30000
+fixed matrix size: 3200
 
-q = 10:
+q = 1: 86.978058
 
-q = 20:
+q = 4: 37.505196
 
-q = 30:
+q = 16: 20.700596
 
-q = 40:
+q = 64: 10.616399
 
-q = 50:
+q = 256: 7.024674
 
-q = 60:
-
-
-
+q = 1024: 5.686962
 
 ################################
 
-Jacobi Non-blocking
+Sample Sort
 
 ################################
+The number of proceessor is fixed at 64
+N is the number of elements to be sorted per processor
 
-Weak Scalability: 
+Total = 640	N = 100: 0.006933 
 
-Fixed local size per process: lN = 100
+Total = 1280	N = 200: 0.009363
 
-Fixed number of iterations: 5000
+Total = 2560	N = 400: 0.009854
 
-N = 1000 with q = 10 : 1.583551
+Total = 5120	N = 800: 0.013092
 
-N = 1500 with q = 15 : 2.153284
+Total = 10240	N = 1600: 0.032838
 
-N = 2000 with q = 20 : 2.038419
-
-N = 2500 with q = 25 : 2.226798
-
-N = 3000 with q = 30 : 2.081266
-
-N = 3500 with q = 35 : 2.094943
-
-N = 4000 with q = 40 : 2.070127
-
-
-Strong Scalability:
-
-fixed matrix size: 30000
-
-q = 10:
-
-q = 20:
-
-q = 30:
-
-q = 40:
-
-q = 50:
-
-q = 60:
